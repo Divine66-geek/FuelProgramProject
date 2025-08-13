@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.LoginController"
-           style="-fx-background-color: linear-gradient(to bottom right, #2c3e50, #3498db);">
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.LoginController">
     <children>
-        <VBox spacing="15" alignment="CENTER" maxWidth="350"
-              style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 30;">
+        <!-- 🌄 Background Image -->
+        <ImageView fx:id="backgroundImage" fitWidth="800" fitHeight="600" preserveRatio="false">
+            <image>
+                <Image url="@images/background.png" />
+            </image>
+        </ImageView>
+
+        <!-- 💻 Login Form -->
+        <VBox spacing="10" alignment="CENTER" maxWidth="250"
+              style="-fx-background-color: black; -fx-background-radius: 10; -fx-padding: 30;">
             <children>
+                <Label text="BP"
+                       style="-fx-font-size: 24px; -fx-text-fill: green; -fx-font-weight: bold;"/>
+                
                 <Label text="Welcome Back"
-                       style="-fx-font-size: 24px; -fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+                       style="-fx-font-size: 24px; -fx-text-fill: green; -fx-font-weight: bold;"/>
 
                 <TextField fx:id="usernameField" promptText="Username"
                            style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-padding: 10;"/>
 
-                <!-- Pressing Enter here will trigger login -->
                 <PasswordField fx:id="passwordField" promptText="Password" onAction="#onEnterPressed"
                                style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-padding: 10;"/>
 
                 <Button fx:id="loginButton" text="Login" onAction="#handleLogin" />
+
                 <HBox spacing="10" alignment="CENTER">
                     <Hyperlink text="Forgot Password?" onAction="#goToForgotPassword" style="-fx-text-fill: #3498db;"/>
                     <Label text="|" style="-fx-text-fill: #7f8c8d;"/>
