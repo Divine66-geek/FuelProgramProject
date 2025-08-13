@@ -15,7 +15,7 @@
 
     <!-- Title -->
     <Label text="Fuel Purchase"
-           style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" />
+           style="-fx-font-size: 24px; -fx-text-fill: #1abc9c; -fx-font-weight: bold;" />
 
     <!-- Fuel Type -->
     <VBox spacing="5" alignment="CENTER_LEFT" prefWidth="250">
