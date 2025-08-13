@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.CarDetailsControl"
+           style="-fx-background-color: linear-gradient(to bottom right, #34495e, #2c3e50);">
+    <children>
+        <VBox spacing="20" alignment="CENTER" maxWidth="500"
+              style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 30;">
+            <children>
+                <Label fx:id="usernameLabel" text="Welcome!"
+                       style="-fx-font-size: 20px; -fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+
+                <Label text="Enter Vehicle Details"
+                       style="-fx-font-size: 18px; -fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+
+                <TextField fx:id="regNoField" promptText="Registration Number"/>
+                <TextField fx:id="regDateField" promptText="Registration Date (YYYY-MM-DD)"/>
+                <TextField fx:id="chassisNoField" promptText="Chassis Number"/>
+                <TextField fx:id="engineNoField" promptText="Engine Number"/>
+
+                <HBox spacing="10" alignment="CENTER">
+                    <VBox spacing="10" alignment="CENTER">
+                        <Button text="Upload Front Plate" onAction="#handleFrontUpload"/>
+                        <ImageView fx:id="frontPlateView" fitWidth="150" fitHeight="100"
+                                   preserveRatio="true" style="-fx-border-color: #bdc3c7;"/>
+                    </VBox>
+                    <VBox spacing="10" alignment="CENTER">
+                        <Button text="Upload Back Plate" onAction="#handleBackUpload"/>
+                        <ImageView fx:id="backPlateView" fitWidth="150" fitHeight="100"
+                                   preserveRatio="true" style="-fx-border-color: #bdc3c7;"/>
+                    </VBox>
+                </HBox>
+
+                <Button text="Submit" onAction="#handleSubmit"
+                        style="-fx-background-color: #2980b9; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+                <Label fx:id="messageLabel" text="" wrapText="true"
+                       style="-fx-text-fill: #e74c3c; -fx-font-size: 12px;"/>
+            </children>
+        </VBox>
+    </children>
+</StackPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      
+      fx:controller="application.CarDetailsController"
+      spacing="20" alignment="CENTER"
+      style="-fx-padding: 30; -fx-background-color: #f0f0f0;">
+
+    <!-- Title -->
+    <Label text="Choose Your Vehicle"
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+    <!-- Brand Selection -->
+    <VBox spacing="5" alignment="CENTER_LEFT" prefWidth="350">
+        <Label text="Select Brand"
+               style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+        <ComboBox fx:id="brandComboBox" prefWidth="350"
+                  promptText="Choose a car brand..." />
+    </VBox>
+
+    <!-- Model List -->
+    <VBox spacing="5" alignment="CENTER_LEFT" prefWidth="350">
+        <Label text="Select Model"
+               style="-fx-font-size: 14px; -fx-text-fill: #555;" />
+        <ListView fx:id="modelListView" prefHeight="180" />
+    </VBox>
+
+    <!-- Fuel Info -->
+    <Label fx:id="fuelInfoLabel"
+           wrapText="true"
+           prefWidth="350"
+           style="-fx-background-color: #e0e0e0; -fx-padding: 10; -fx-background-radius: 5; -fx-font-size: 14px;" />
+
+    <!-- Proceed Button -->
+    <Button text="Proceed to Payment"
+            onAction="#goToPayment"
+            style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8 20 8 20; -fx-background-radius: 5;" />
+
+</VBox>
