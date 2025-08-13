@@ -14,7 +14,7 @@ import javafx.scene.Parent;
 public class LoginController {
     @FXML private TextField usernameField;
     @FXML private PasswordField passwordField;
-    @FXML private ImageView backgroundImage; // 👈 Link to ImageView in FXML
+    @FXML private ImageView backgroundImage; 
 
     // Triggered when Enter is pressed in password field
     @FXML
