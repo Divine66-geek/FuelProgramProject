@@ -11,11 +11,11 @@
 <VBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="application.FuelController"
       spacing="15" alignment="CENTER"
-      style="-fx-padding: 30; -fx-background-color: #f4f4f4; -fx-border-color: #cccccc; -fx-border-radius: 10; -fx-background-radius: 10;">
+      style="-fx-padding: 30; -fx-background-color: black; -fx-border-color: #cccccc; -fx-border-radius: 10; -fx-background-radius: 10;">
 
     <!-- Title -->
     <Label text="Fuel Purchase"
-           style="-fx-font-size: 24px; -fx-text-fill: #333333; -fx-font-weight: bold;" />
+           style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" />
 
     <!-- Fuel Type -->
     <VBox spacing="5" alignment="CENTER_LEFT" prefWidth="250">
