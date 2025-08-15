@@ -7,11 +7,11 @@
       
       fx:controller="application.CarDetailsController"
       spacing="20" alignment="CENTER"
-      style="-fx-padding: 30; -fx-background-color: #f0f0f0;">
+      style="-fx-padding: 30; -fx-background-color: black;">
 
     <!-- Title -->
     <Label text="Choose Your Vehicle"
-           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #1abc9c;" />
 
     <!-- Brand Selection -->
     <VBox spacing="5" alignment="CENTER_LEFT" prefWidth="350">
